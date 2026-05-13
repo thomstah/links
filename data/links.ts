@@ -30,7 +30,7 @@ export const secretLinks: LinkItem[] = [
 export const funFacts: FunFact[] = [
   { question: 'How many baby teeth do I still have?', answer: '1'         },
   { question: 'What brand is my camera?',             answer: 'Panasonic' },
-  { question: 'How old am I?',                        answer: '21'        },
+  { question: 'What day of the month is my birthday?', answer: '17'        },
   { question: 'Who is my favorite artist?',            answer: 'Drake'    },
 
 ];
