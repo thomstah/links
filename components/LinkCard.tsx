@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { GitHubIcon, LinkedInIcon, InstagramIcon, YouTubeIcon, PortfolioIcon, GalleryIcon, HubIcon, SecretIcon } from './Icons';
+import { GitHubIcon, LinkedInIcon, InstagramIcon, YouTubeIcon, PortfolioIcon, GalleryIcon, HubIcon, SpotifyIcon, RobloxIcon, SteamIcon } from './Icons';
 import { colors, fontSizes } from '../lib/tokens';
 import type { LinkItem } from '../data/links';
 
@@ -13,7 +13,9 @@ const ICON_MAP = {
   portfolio: PortfolioIcon,
   gallery:   GalleryIcon,
   hub:       HubIcon,
-  secret:    SecretIcon,
+  spotify:   SpotifyIcon,
+  roblox:    RobloxIcon,
+  steam:     SteamIcon,
 };
 
 export function LinkCard({ link, blurred = false }: { link: LinkItem; blurred?: boolean }) {

@@ -2,7 +2,7 @@ export interface LinkItem {
   label: string;
   sublabel?: string;
   href: string;
-  icon: 'github' | 'linkedin' | 'instagram' | 'youtube' | 'portfolio' | 'gallery' | 'hub' | 'secret';
+  icon: 'github' | 'linkedin' | 'instagram' | 'youtube' | 'portfolio' | 'gallery' | 'hub' | 'spotify' | 'roblox' | 'steam';
 }
 
 export interface FunFact {
@@ -21,8 +21,10 @@ export const publicLinks: LinkItem[] = [
 ];
 
 export const secretLinks: LinkItem[] = [
-  { label: '???', href: 'https://REPLACE_ME', icon: 'secret' },
-  { label: '???', href: 'https://REPLACE_ME', icon: 'secret' },
+  { label: 'SPOTIFY', href: 'https://open.spotify.com/user/ilaos_?si=f031d270988a4a8f', icon: 'spotify' },
+  { label: 'ROBLOX',  href: 'https://www.roblox.com/users/1731783985/profile',          icon: 'roblox'  },
+  { label: 'STEAM',   href: 'https://steamcommunity.com/profiles/76561199228009953/',    icon: 'steam'   },
+
 ];
 
 export const funFacts: FunFact[] = [
