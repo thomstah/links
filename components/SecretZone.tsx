@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { LinkCard } from './LinkCard';
-import { LockIcon } from './Icons';
 import { colors, fontSizes } from '../lib/tokens';
 import { secretLinks, funFacts } from '../data/links';
 
@@ -85,7 +84,7 @@ export function SecretZone() {
             justifyContent: 'center',
             gap:            '8px',
           }}>
-            <LockIcon size={22} color={colors.textMuted} />
+            <span style={{ fontFamily: 'var(--font-pixel)', fontSize: '16px', color: colors.textMuted }}>🔒</span>
             <span style={{ fontFamily: 'var(--font-pixel)', fontSize: '9px', letterSpacing: '0.15em', color: colors.textMuted }}>
               CLICK TO UNLOCK
             </span>
