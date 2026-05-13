@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { GitHubIcon, LinkedInIcon, InstagramIcon, YouTubeIcon, PortfolioIcon, GalleryIcon, HubIcon, SpotifyIcon, RobloxIcon, SteamIcon } from './Icons';
+import { GitHubIcon, LinkedInIcon, InstagramIcon, YouTubeIcon, TikTokIcon, PortfolioIcon, GalleryIcon, HubIcon, SpotifyIcon, RobloxIcon, SteamIcon } from './Icons';
 import { colors, fontSizes } from '../lib/tokens';
 import type { LinkItem } from '../data/links';
 
@@ -10,6 +10,7 @@ const ICON_MAP = {
   linkedin:  LinkedInIcon,
   instagram: InstagramIcon,
   youtube:   YouTubeIcon,
+  tiktok:    TikTokIcon,
   portfolio: PortfolioIcon,
   gallery:   GalleryIcon,
   hub:       HubIcon,
