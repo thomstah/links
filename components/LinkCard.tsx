@@ -1,11 +1,24 @@
 'use client';
 
 import { useState } from 'react';
+import { GitHubIcon, LinkedInIcon, InstagramIcon, YouTubeIcon, PortfolioIcon, GalleryIcon, HubIcon, SecretIcon } from './Icons';
 import { colors, fontSizes } from '../lib/tokens';
 import type { LinkItem } from '../data/links';
 
+const ICON_MAP = {
+  github:    GitHubIcon,
+  linkedin:  LinkedInIcon,
+  instagram: InstagramIcon,
+  youtube:   YouTubeIcon,
+  portfolio: PortfolioIcon,
+  gallery:   GalleryIcon,
+  hub:       HubIcon,
+  secret:    SecretIcon,
+};
+
 export function LinkCard({ link, blurred = false }: { link: LinkItem; blurred?: boolean }) {
   const [hovered, setHovered] = useState(false);
+  const Icon = ICON_MAP[link.icon];
 
   return (
     <a
@@ -20,6 +33,7 @@ export function LinkCard({ link, blurred = false }: { link: LinkItem; blurred?: 
         style={{
           display:         'flex',
           alignItems:      'center',
+          gap:             '14px',
           padding:         '14px 16px',
           backgroundColor: hovered ? colors.surfaceHover : colors.surface,
           border:          `1px solid ${hovered ? '#3a3a3a' : colors.rule}`,
@@ -27,6 +41,10 @@ export function LinkCard({ link, blurred = false }: { link: LinkItem; blurred?: 
           cursor:          blurred ? 'default' : 'pointer',
         }}
       >
+        <div style={{ color: hovered ? colors.text : colors.textMuted, transition: 'color 200ms ease', flexShrink: 0, lineHeight: 0 }}>
+          <Icon size={20} color="currentColor" />
+        </div>
+
         <div style={{ flex: 1 }}>
           <p style={{
             fontFamily:    'var(--font-pixel)',
